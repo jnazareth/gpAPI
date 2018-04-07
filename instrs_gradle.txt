@@ -1,0 +1,116 @@
+D:\personal\projects\gradle_test\gpAPI>gradle --q clean
+D:\personal\projects\gradle_test\gpAPI>gradle --q build
+warning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: D:\personal\projects\gradle_test\gpAPI\src\main\java\gpSheetsAPI.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+D:\personal\projects\gradle_test\gpAPI>gradle --q fatJar
+D:\personal\projects\gradle_test\gpAPI>cd build/libs
+
+D:\personal\projects\gradle_test\gpAPI\build\libs>java -jar gpAPI-1.0.0.jar
+{"majorDimension":"ROWS","range":"rimatracker!A2:G32","values":[["Wed, Jun 14","Niagara tour (anniversary)","","","","$6
+5.00","$65.00"],[],["Wed, Jun 14","Niagara tour (Rima)","","","","","$0.00"],["Thu, Jun 15","City Cruise","","","","","$
+55.80"],["Sat, Jun 17","ikea","plates, bowls, etc","","","","$14.94"],["Sat, Jun 24","walmart","top, slippers","","","",
+"$13.82"],["Sat, Jun 24","dollar general","shampoo,  balloon","","","","$6.50"],["Sun, Jun 25","shoprite","zinfadel","",
+"","","$10.68"],["Mon, Jun 26","MTA","subway","","","","$20.00"],["Mon, Jun 26","MTA","subway","","","","$20.00"],["Mon,
+ Jun 26","NJTransit","pabt","","","","$14.00"],["Mon, Jun 26","buyrite","chardonay","","","","$12.83"],["Tue, Jun 27","L
+indt","chocolate","","","","$16.96"],["Wed, Jun 28","Ellis Island Cafe","lunch","","","","$24.23"],["Wed, Jun 28","NJTra
+nsit","liberty st","","","","$4.50"],["Wed, Jun 28","NJTransit","pavonia","","","","$4.50"],["Thu, Jun 29","NJTransit","
+pabt","","","","$28.00"],["Thu, Jun 29","coldstone","icecream","","","","$9.23"],["Thu, Jun 29","MoMA","museum","","",""
+,"-$50.00"],["Fri, Jun 30","Smith's","drinks","","","","$78.00"],["Fri, Jun 30","City Siteseeing ","drinks + dinner","",
+"","","$14.00"],["Fri, Jun 30","City Siteseeing ","tip","","","","$3.00"],["Fri, Jun 30","Irish","drinks","","","","$24.
+00"],["Sat, Jul 1","Niagara tours","maid mist, corning, watkins","","","","$95.50"],["Sat, Jul 1","Niagara","coffee","",
+"","","$2.02"],["Sat, Jul 1","dominoes","dinner","","","","$22.96"],["Sun, Jul 2","Niagara tours","service fee","","",""
+,"$34.00"],["Sun, Jul 2","fresh market","saltines","","","","$3.00"],["Sun, Jul 2","Corning","lunch","","","","$15.33"],
+["Sun, Jul 2","Corning","coffee","","","","$2.11"],["Tue, Jul 4","NJTransit","hblr","","","","$4.00"]]}
+Date, Item, Desc, , , Amt
+Wed, Jun 14,Niagara tour (anniversary),,,,$65.00,$65.00,
+
+Wed, Jun 14,Niagara tour (Rima),,,,,$0.00,
+Thu, Jun 15,City Cruise,,,,,$55.80,
+Sat, Jun 17,ikea,plates, bowls, etc,,,,$14.94,
+Sat, Jun 24,walmart,top, slippers,,,,$13.82,
+Sat, Jun 24,dollar general,shampoo,  balloon,,,,$6.50,
+Sun, Jun 25,shoprite,zinfadel,,,,$10.68,
+Mon, Jun 26,MTA,subway,,,,$20.00,
+Mon, Jun 26,MTA,subway,,,,$20.00,
+Mon, Jun 26,NJTransit,pabt,,,,$14.00,
+Mon, Jun 26,buyrite,chardonay,,,,$12.83,
+Tue, Jun 27,Lindt,chocolate,,,,$16.96,
+Wed, Jun 28,Ellis Island Cafe,lunch,,,,$24.23,
+Wed, Jun 28,NJTransit,liberty st,,,,$4.50,
+Wed, Jun 28,NJTransit,pavonia,,,,$4.50,
+Thu, Jun 29,NJTransit,pabt,,,,$28.00,
+Thu, Jun 29,coldstone,icecream,,,,$9.23,
+Thu, Jun 29,MoMA,museum,,,,-$50.00,
+Fri, Jun 30,Smith's,drinks,,,,$78.00,
+Fri, Jun 30,City Siteseeing ,drinks + dinner,,,,$14.00,
+Fri, Jun 30,City Siteseeing ,tip,,,,$3.00,
+Fri, Jun 30,Irish,drinks,,,,$24.00,
+Sat, Jul 1,Niagara tours,maid mist, corning, watkins,,,,$95.50,
+Sat, Jul 1,Niagara,coffee,,,,$2.02,
+Sat, Jul 1,dominoes,dinner,,,,$22.96,
+Sun, Jul 2,Niagara tours,service fee,,,,$34.00,
+Sun, Jul 2,fresh market,saltines,,,,$3.00,
+Sun, Jul 2,Corning,lunch,,,,$15.33,
+Sun, Jul 2,Corning,coffee,,,,$2.11,
+Tue, Jul 4,NJTransit,hblr,,,,$4.00,
+
+D:\personal\projects\gradle_test\gpAPI\build\libs>
+______________________________________________________________________________________________________
+D:\personal\projects\gradle_test\gpAPI>gradle -q clean
+D:\personal\projects\gradle_test\gpAPI>gradle --q fatJar
+warning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: D:\personal\projects\gradle_test\gpAPI\src\main\java\gpSheetsAPI.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+D:\personal\projects\gradle_test\gpAPI>java -jar build\libs\gpAPI-1.0.0.jar
+{"majorDimension":"ROWS","range":"rimatracker!A2:G32","values":[["Wed, Jun 14","Niagara tour (anniversary)","","","","$6
+5.00","$65.00"],[],["Wed, Jun 14","Niagara tour (Rima)","","","","","$0.00"],["Thu, Jun 15","City Cruise","","","","","$
+55.80"],["Sat, Jun 17","ikea","plates, bowls, etc","","","","$14.94"],["Sat, Jun 24","walmart","top, slippers","","","",
+"$13.82"],["Sat, Jun 24","dollar general","shampoo,  balloon","","","","$6.50"],["Sun, Jun 25","shoprite","zinfadel","",
+"","","$10.68"],["Mon, Jun 26","MTA","subway","","","","$20.00"],["Mon, Jun 26","MTA","subway","","","","$20.00"],["Mon,
+ Jun 26","NJTransit","pabt","","","","$14.00"],["Mon, Jun 26","buyrite","chardonay","","","","$12.83"],["Tue, Jun 27","L
+indt","chocolate","","","","$16.96"],["Wed, Jun 28","Ellis Island Cafe","lunch","","","","$24.23"],["Wed, Jun 28","NJTra
+nsit","liberty st","","","","$4.50"],["Wed, Jun 28","NJTransit","pavonia","","","","$4.50"],["Thu, Jun 29","NJTransit","
+pabt","","","","$28.00"],["Thu, Jun 29","coldstone","icecream","","","","$9.23"],["Thu, Jun 29","MoMA","museum","","",""
+,"-$50.00"],["Fri, Jun 30","Smith's","drinks","","","","$78.00"],["Fri, Jun 30","City Siteseeing ","drinks + dinner","",
+"","","$14.00"],["Fri, Jun 30","City Siteseeing ","tip","","","","$3.00"],["Fri, Jun 30","Irish","drinks","","","","$24.
+00"],["Sat, Jul 1","Niagara tours","maid mist, corning, watkins","","","","$95.50"],["Sat, Jul 1","Niagara","coffee","",
+"","","$2.02"],["Sat, Jul 1","dominoes","dinner","","","","$22.96"],["Sun, Jul 2","Niagara tours","service fee","","",""
+,"$34.00"],["Sun, Jul 2","fresh market","saltines","","","","$3.00"],["Sun, Jul 2","Corning","lunch","","","","$15.33"],
+["Sun, Jul 2","Corning","coffee","","","","$2.11"],["Tue, Jul 4","NJTransit","hblr","","","","$4.00"]]}
+Date, Item, Desc, , , Amt
+Wed, Jun 14,Niagara tour (anniversary),,,,$65.00,$65.00,
+
+Wed, Jun 14,Niagara tour (Rima),,,,,$0.00,
+Thu, Jun 15,City Cruise,,,,,$55.80,
+Sat, Jun 17,ikea,plates, bowls, etc,,,,$14.94,
+Sat, Jun 24,walmart,top, slippers,,,,$13.82,
+Sat, Jun 24,dollar general,shampoo,  balloon,,,,$6.50,
+Sun, Jun 25,shoprite,zinfadel,,,,$10.68,
+Mon, Jun 26,MTA,subway,,,,$20.00,
+Mon, Jun 26,MTA,subway,,,,$20.00,
+Mon, Jun 26,NJTransit,pabt,,,,$14.00,
+Mon, Jun 26,buyrite,chardonay,,,,$12.83,
+Tue, Jun 27,Lindt,chocolate,,,,$16.96,
+Wed, Jun 28,Ellis Island Cafe,lunch,,,,$24.23,
+Wed, Jun 28,NJTransit,liberty st,,,,$4.50,
+Wed, Jun 28,NJTransit,pavonia,,,,$4.50,
+Thu, Jun 29,NJTransit,pabt,,,,$28.00,
+Thu, Jun 29,coldstone,icecream,,,,$9.23,
+Thu, Jun 29,MoMA,museum,,,,-$50.00,
+Fri, Jun 30,Smith's,drinks,,,,$78.00,
+Fri, Jun 30,City Siteseeing ,drinks + dinner,,,,$14.00,
+Fri, Jun 30,City Siteseeing ,tip,,,,$3.00,
+Fri, Jun 30,Irish,drinks,,,,$24.00,
+Sat, Jul 1,Niagara tours,maid mist, corning, watkins,,,,$95.50,
+Sat, Jul 1,Niagara,coffee,,,,$2.02,
+Sat, Jul 1,dominoes,dinner,,,,$22.96,
+Sun, Jul 2,Niagara tours,service fee,,,,$34.00,
+Sun, Jul 2,fresh market,saltines,,,,$3.00,
+Sun, Jul 2,Corning,lunch,,,,$15.33,
+Sun, Jul 2,Corning,coffee,,,,$2.11,
+Tue, Jul 4,NJTransit,hblr,,,,$4.00,
+
+D:\personal\projects\gradle_test\gpAPI>
