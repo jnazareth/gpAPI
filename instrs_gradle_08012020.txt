@@ -1,0 +1,72 @@
+Note: Check the following:
+1. C:\Users\u8005108\.credentials\gpSheets	
+	|		|	
+	|-> derived	| 
+	from 		|
+	java class	|-> folder to saved Credentials
+In order to make it work, the saved credentials files in this directory had to be deleted.
+The program reauthenticates when its run & save Credential files.
+
+2. \gpAPI\src\main\resources
+	contains client_secret.json or client_secret2.json files.
+	this file is JSON exported from developers console:
+	https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=crucial-citron-135723
+
+3. the sheet being used in this example is:
+	https://docs.google.com/spreadsheets/d/1qjGyUmxiYC3jG1knpd2NxtQY7Nl15UbD44bAOeyJ6TA/edit#gid=163954625
+	located:
+	https://drive.google.com/drive/folders/0B9oc3tUqNC1sTUFSdDlKZHl0MGM?usp=sharing
+	\\docs\budgets\Budget Planning 2017
+
+++++++++++++++++++++++++++++++++++++++++++++++
+working run:
+
+C:\Users\u8005108\OneDrive - nyu.edu\personal\projects\gpAPI>gradle --q fatJar
+Note: C:\Users\u8005108\OneDrive - nyu.edu\personal\projects\gpAPI\src\main\java\gpSheetsAPI.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+C:\Users\u8005108\OneDrive - nyu.edu\personal\projects\gpAPI>java -jar build\libs\gpAPI-1.0.0.jar
+Credential::authorize()
+user.home: C:\Users\u8005108
+user.name: U8005108
+Load client secrets
+Credentials saved to C:\Users\u8005108\.credentials\gpSheets
+ready to read sheet ...
+request:{spreadsheetId=1qjGyUmxiYC3jG1knpd2NxtQY7Nl15UbD44bAOeyJ6TA}
+{"majorDimension":"ROWS","range":"rimatracker!A2:G32","values":[["Wed, Jun 14","Niagara tour (anniversary)","","","","$65.00","$65.00"],[],["Wed, Jun 14","Niagara tour (Rima)","","","","","$0.00"],["Thu, Jun 15","City Cruise","","","","","$55.80"],["Sat, Jun 17","ikea","plates, bowls, etc","","","","$14.94"],["Sat, Jun 24","walmart","top, slippers","","","","$13.82"],["Sat, Jun 24","dollar general","shampoo,  balloon","","","","$6.50"],["Sun, Jun 25","shoprite","zinfadel","","","","$10.68"],["Mon, Jun 26","MTA","subway","","","","$20.00"],["Mon, Jun 26","MTA","subway","","","","$20.00"],["Mon, Jun 26","NJTransit","pabt","","","","$14.00"],["Mon, Jun 26","buyrite","chardonay","","","","$12.83"],["Tue, Jun 27","Lindt","chocolate","","","","$16.96"],["Wed, Jun 28","Ellis Island Cafe","lunch","","","","$24.23"],["Wed, Jun 28","NJTransit","liberty st","","","","$4.50"],["Wed, Jun 28","NJTransit","pavonia","","","","$4.50"],["Thu, Jun 29","NJTransit","pabt","","","","$28.00"],["Thu, Jun 29","coldstone","icecream","","","","$9.23"],["Thu, Jun 29","MoMA","museum","","","","-$50.00"],["Fri, Jun 30","Smith's","drinks","","","","$78.00"],["Fri, Jun 30","City Siteseeing ","drinks + dinner","","","","$14.00"],["Fri, Jun 30","City Siteseeing ","tip","","","","$3.00"],["Fri, Jun 30","Irish","drinks","","","","$24.00"],["Sat, Jul 1","Niagara tours","maid mist, corning, watkins","","","","$95.50"],["Sat, Jul 1","Niagara","coffee","","","","$2.02"],["Sat, Jul 1","dominoes","dinner","","","","$22.96"],["Sun, Jul 2","Niagara tours","service fee","","","","$34.00"],["Sun, Jul 2","fresh market","saltines","","","","$3.00"],["Sun, Jul 2","Corning","lunch","","","","$15.33"],["Sun, Jul 2","Corning","coffee","","","","$2.11"],["Tue, Jul 4","NJTransit","hblr","","","","$4.00"]]}
+Date, Item, Desc, , , Amt
+Wed, Jun 14,Niagara tour (anniversary),,,,$65.00,$65.00,
+
+Wed, Jun 14,Niagara tour (Rima),,,,,$0.00,
+Thu, Jun 15,City Cruise,,,,,$55.80,
+Sat, Jun 17,ikea,plates, bowls, etc,,,,$14.94,
+Sat, Jun 24,walmart,top, slippers,,,,$13.82,
+Sat, Jun 24,dollar general,shampoo,  balloon,,,,$6.50,
+Sun, Jun 25,shoprite,zinfadel,,,,$10.68,
+Mon, Jun 26,MTA,subway,,,,$20.00,
+Mon, Jun 26,MTA,subway,,,,$20.00,
+Mon, Jun 26,NJTransit,pabt,,,,$14.00,
+Mon, Jun 26,buyrite,chardonay,,,,$12.83,
+Tue, Jun 27,Lindt,chocolate,,,,$16.96,
+Wed, Jun 28,Ellis Island Cafe,lunch,,,,$24.23,
+Wed, Jun 28,NJTransit,liberty st,,,,$4.50,
+Wed, Jun 28,NJTransit,pavonia,,,,$4.50,
+Thu, Jun 29,NJTransit,pabt,,,,$28.00,
+Thu, Jun 29,coldstone,icecream,,,,$9.23,
+Thu, Jun 29,MoMA,museum,,,,-$50.00,
+Fri, Jun 30,Smith's,drinks,,,,$78.00,
+Fri, Jun 30,City Siteseeing ,drinks + dinner,,,,$14.00,
+Fri, Jun 30,City Siteseeing ,tip,,,,$3.00,
+Fri, Jun 30,Irish,drinks,,,,$24.00,
+Sat, Jul 1,Niagara tours,maid mist, corning, watkins,,,,$95.50,
+Sat, Jul 1,Niagara,coffee,,,,$2.02,
+Sat, Jul 1,dominoes,dinner,,,,$22.96,
+Sun, Jul 2,Niagara tours,service fee,,,,$34.00,
+Sun, Jul 2,fresh market,saltines,,,,$3.00,
+Sun, Jul 2,Corning,lunch,,,,$15.33,
+Sun, Jul 2,Corning,coffee,,,,$2.11,
+Tue, Jul 4,NJTransit,hblr,,,,$4.00,
+
+C:\Users\u8005108\OneDrive - nyu.edu\personal\projects\gpAPI>
+
+C:\Users\u8005108\OneDrive - nyu.edu\personal\projects\gitCloned\gpAPI>gradle --q clean
+C:\Users\u8005108\OneDrive - nyu.edu\personal\projects\gitCloned\gpAPI>
