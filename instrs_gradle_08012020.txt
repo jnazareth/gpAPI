@@ -12,6 +12,8 @@ The program reauthenticates when its run & save Credential files.
 	this file is JSON exported from developers console:
 	https://console.developers.google.com/apis/api/sheets.googleapis.com/overview?project=crucial-citron-135723
 
+	its encrypted to protect ket on GitHub. unencrypt before running the app.
+
 3. the sheet being used in this example is:
 	https://docs.google.com/spreadsheets/d/1qjGyUmxiYC3jG1knpd2NxtQY7Nl15UbD44bAOeyJ6TA/edit#gid=163954625
 	located:
